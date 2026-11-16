@@ -18,6 +18,8 @@ public class App extends Application {
         String javafxVersion = SystemInfo.javafxVersion();
 
         Label label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+        Label marioLabel = new Label("evidentemente, questo commit è banale");
+        
         Scene scene = new Scene(new StackPane(label), 640, 480);
         stage.setScene(scene);
         stage.show();
