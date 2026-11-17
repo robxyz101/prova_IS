@@ -19,8 +19,9 @@ public class App extends Application {
 
         Label label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
         Label marioLabel = new Label("evidentemente, questo commit è banale");
-        
-        VBox root = new VBox(10, label, marioLabel);
+        Label manuLabel = new Label("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+
+        VBox root = new VBox(10, label, marioLabel, manuLabel);
         root.setAlignment(javafx.geometry.Pos.CENTER);
         
         Scene scene = new Scene(root, 640, 480);
