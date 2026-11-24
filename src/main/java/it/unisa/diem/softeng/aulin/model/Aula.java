@@ -1,5 +1,7 @@
 package it.unisa.diem.softeng.aulin.model;
 
+import java.util.Objects;
+
 public class Aula {
     private String codice;
     private String nome;
@@ -64,12 +66,14 @@ public class Aula {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Aula aula = (Aula) o;
+        return capienza == aula.capienza && Objects.equals(codice, aula.codice) && Objects.equals(nome, aula.nome) && Objects.equals(edificio, aula.edificio) && Objects.equals(piano, aula.piano);
     }
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return Objects.hash(codice, nome, edificio, piano, capienza);
     }
 }
