@@ -16,7 +16,7 @@ public class Prenotazione {
     private LocalDate data;
     private LocalTime orarioInizio;
     private LocalTime orarioFine;
-    private String idSerie = "";
+    private String idSerie; // usiamo NULL come valore per riconoscere se fa parte di una serie
 
 
     /**
@@ -61,6 +61,43 @@ public class Prenotazione {
     }
 
 
+    /**
+     * @brief Questo costrutore serve per creare le prenotazioni da caricamento file, percio contiene id che deve essere caricato da FILE e non generato d'accapo
+     * @param id
+     * @param aula
+     * @param docente
+     * @param corso
+     * @param tipologia
+     * @param denominazione
+     * @param data
+     * @param orarioInizio
+     * @param orarioFine
+     */
+    public Prenotazione(String id,Aula aula, Docente docente, Corso corso, TipoAttivita tipologia, String denominazione, LocalDate data, LocalTime orarioInizio, LocalTime orarioFine) {
+        this(aula, docente, corso, tipologia, denominazione, data, orarioInizio, orarioFine);
+        this.id = id;
+    }
+
+
+    /**
+     * @brief Questo costrutore serve per creare le prenotazioni da caricamento file, percio contiene id e idSerie che devono essere caricati da FILE e non generati d'accapo
+     * @param id
+     * @param aula
+     * @param docente
+     * @param corso
+     * @param tipologia
+     * @param denominazione
+     * @param data
+     * @param orarioInizio
+     * @param orarioFine
+     * @param idSerie
+     */
+    public Prenotazione(String id,Aula aula, Docente docente, Corso corso, TipoAttivita tipologia, String denominazione, LocalDate data, LocalTime orarioInizio, LocalTime orarioFine, String idSerie){
+        this(id, aula, docente, corso, tipologia, denominazione, data, orarioInizio, orarioFine);
+        this.idSerie = idSerie;
+    }
+
+
     public void modifica(Aula aula, Docente docente, Corso corso, TipoAttivita tipologia, String denominazione, LocalDate data, LocalTime orarioInizio, LocalTime orarioFine){
 
     }
@@ -70,7 +107,7 @@ public class Prenotazione {
     }
 
     public boolean isRicorente(){
-        return false;
+        return idSerie != null;
     }
 
     public boolean siSovrapponeA(Prenotazione altra){
