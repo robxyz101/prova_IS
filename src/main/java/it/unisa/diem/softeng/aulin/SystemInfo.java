@@ -1,4 +1,4 @@
-package it.unisa.diem.oop.provagit;
+package it.unisa.diem.softeng.aulin;
 
 public class SystemInfo {
 
