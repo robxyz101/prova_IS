@@ -125,8 +125,8 @@ public class Aula {
      * @brief Aggiorna il edificio dove è collocata l'aula verificando le invarianti.
      *
      * @param[in] edificio Nuovo edificio dove e collocata l'aula.
-     * @pre edificio != null && !edificio.trim().isEmpty()
-     * @post getEdificio().equals(edificio.trim())
+     * @pre edificio != null
+     * @post getEdificio().equals(edificio)
      * @throws ValidazioneException Se edificio è nullo o vuoto (lo stato precedente resta invariato).
      */
     public void setEdificio(String edificio) {
