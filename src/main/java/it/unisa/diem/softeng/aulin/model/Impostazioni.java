@@ -11,7 +11,7 @@ package it.unisa.diem.softeng.aulin.model;
  */
 public class Impostazioni {
     private boolean notificheAttive = true;
-    private ModalitaVisuaizzazione modalita;
+    private ModalitaVisualizzazione modalita;
 
     /**
      * @brief Costruisce le impostazioni con i valori predefiniti di sistema.
@@ -32,7 +32,7 @@ public class Impostazioni {
      * @post getModalitaVisualizzazione() == modalitaVisualizzazione
      * @throws ValidazioneException Se modalitaVisualizzazione è null.
      */
-    public Impostazioni(boolean notificheAttive, ModalitaVisuaizzazione modalita) {
+    public Impostazioni(boolean notificheAttive, ModalitaVisualizzazione modalita) {
         this.notificheAttive = notificheAttive;
         this.modalita = modalita;
     }
@@ -61,7 +61,7 @@ public class Impostazioni {
      *
      * @return Modalità di visualizzazione attiva (mai null).
      */
-    public ModalitaVisuaizzazione getModalitaVisualizzazione() {
+    public ModalitaVisualizzazione getModalitaVisualizzazione() {
         return modalita;
     }
 
@@ -73,7 +73,7 @@ public class Impostazioni {
      * @post getModalitaVisualizzazione() == modalita
      * @throws ValidazioneException Se modalita è null.
      */
-    public void setModalitaVisualizzazione(ModalitaVisuaizzazione modalita) {
+    public void setModalitaVisualizzazione(ModalitaVisualizzazione modalita) {
         this.modalita = modalita;
     }
 }

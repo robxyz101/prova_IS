@@ -8,7 +8,7 @@ package it.unisa.diem.softeng.aulin.model;
  *
  * @see Impostazioni
  */
-public enum ModalitaVisuaizzazione {
+public enum ModalitaVisualizzazione {
     /** Tema grafico predefinito standard. */
     NORMALE,
     /** Tema ad alto contrasto (rapporto di contrasto testo/sfondo >= 4,5:1). */

@@ -10,11 +10,12 @@ var annotated_dup =
                 [ "Corso", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_corso.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_corso" ],
                 [ "Docente", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_docente.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_docente" ],
                 [ "Edificio", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_edificio.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_edificio" ],
-                [ "EsitoInvio", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_esito_invio.html", null ],
+                [ "EsitoInvio", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_esito_invio.html", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_esito_invio" ],
                 [ "Impostazioni", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_impostazioni.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_impostazioni" ],
-                [ "ModalitaVisuaizzazione", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_modalita_visuaizzazione.html", null ],
+                [ "ModalitaVisualizzazione", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_modalita_visualizzazione.html", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_modalita_visualizzazione" ],
                 [ "Prenotazione", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_prenotazione.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_prenotazione" ],
-                [ "TipoAttivita", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_tipo_attivita.html", null ]
+                [ "TipoAttivita", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_tipo_attivita.html", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_tipo_attivita" ],
+                [ "ValidazioneException", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_validazione_exception.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_validazione_exception" ]
               ] ],
               [ "storage", null, [
                 [ "ArchivioDati", "interfaceit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1storage_1_1_archivio_dati.html", "interfaceit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1storage_1_1_archivio_dati" ],
