@@ -239,39 +239,6 @@ public class Prenotazione {
     }
 
     /**
-     * @brief Aggiorna i dati di una singola occorrenza appartenente
-     * a una serie ricorrente.
-     *
-     * Consente di modificare una specifica occorrenza senza alterare
-     * l'identità della prenotazione né quella della serie di appartenenza.
-     *
-     * @param[in] aula Nuova aula assegnata alla prenotazione.
-     * @param[in] docente Nuovo docente responsabile dell'attività.
-     * @param[in] corso Nuovo corso associato, null se non previsto.
-     * @param[in] tipologia Nuova tipologia dell'attività.
-     * @param[in] denominazione Nuovo titolo o descrizione dell'attività.
-     * @param[in] data Nuova data della prenotazione.
-     * @param[in] orarioInizio Nuovo orario di inizio.
-     * @param[in] orarioFine Nuovo orario di termine.
-     * @param[in] idSerie Identificativo della serie di appartenenza.
-     *
-     * @pre I nuovi dati devono rispettare i vincoli di dominio.
-     * @pre orarioFine deve essere successivo a orarioInizio.
-     *
-     * @post I dati modificabili risultano aggiornati.
-     * @post id e idSerie mantengono i valori precedenti.
-     *
-     * @throws ValidazioneException Se i nuovi dati non rispettano
-     * i vincoli di dominio.
-     */
-    public void modifica(Aula aula, Docente docente, Corso corso,
-                         TipoAttivita tipologia, String denominazione,
-                         LocalDate data, LocalTime orarioInizio,
-                         LocalTime orarioFine, String idSerie) {
-
-    }
-
-    /**
      * @brief Verifica se la prenotazione appartiene a una serie ricorrente.
      *
      * Una prenotazione viene considerata ricorrente quando possiede
