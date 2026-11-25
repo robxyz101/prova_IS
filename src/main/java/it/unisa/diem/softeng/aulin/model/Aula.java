@@ -10,7 +10,7 @@ public class Aula {
     private int capienza;
 
     /**
-     * Pippo tanto
+     *
      * @param codice
      * @param nome
      * @param edficio

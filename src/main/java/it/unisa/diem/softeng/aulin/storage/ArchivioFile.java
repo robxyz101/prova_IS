@@ -47,8 +47,8 @@ public abstract class ArchivioFile implements ArchivioDati {
      * @pre percorsoFile != null
      * @post Le collezioni e gli indici interni sono inizializzati vuoti e le impostazioni hanno i valori predefiniti.
      */
-    public ArchivioFile(Path percorsoFile, Path percorsoFile1, NavigableMap<LocalDate, List<Prenotazione>> prenotazioniPerData, Map<String, List<Prenotazione>> prenotazioniPerSerie, Map<String, Prenotazione> prenotazioniPerId) {
-        this.percorsoFile = percorsoFile1;
+    public ArchivioFile(Path percorsoFile, NavigableMap<LocalDate, List<Prenotazione>> prenotazioniPerData, Map<String, List<Prenotazione>> prenotazioniPerSerie, Map<String, Prenotazione> prenotazioniPerId) {
+        this.percorsoFile = percorsoFile;
         this.prenotazioniPerData = prenotazioniPerData;
         this.prenotazioniPerSerie = prenotazioniPerSerie;
         this.prenotazioniPerId = prenotazioniPerId;
