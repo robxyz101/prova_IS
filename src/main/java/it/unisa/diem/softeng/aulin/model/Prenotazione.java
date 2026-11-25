@@ -36,7 +36,7 @@ import java.util.UUID;
  */
 public class Prenotazione {
 
-    private String id;
+    private final String id;
     private Aula aula;
     private Docente docente;
     private Corso corso;
@@ -45,7 +45,7 @@ public class Prenotazione {
     private LocalDate data;
     private LocalTime orarioInizio;
     private LocalTime orarioFine;
-    private String idSerie; // null indica una prenotazione singola
+    private final String idSerie; // null indica una prenotazione singola
 
     /**
      * @brief Crea una nuova prenotazione singola generando automaticamente
@@ -87,6 +87,7 @@ public class Prenotazione {
         this.data = data;
         this.orarioInizio = orarioInizio;
         this.orarioFine = orarioFine;
+        this.idSerie = null;
     }
 
     /**
@@ -120,9 +121,16 @@ public class Prenotazione {
                         LocalDate data, LocalTime orarioInizio,
                         LocalTime orarioFine, String idSerie) {
 
-        this(aula, docente, corso, tipologia, denominazione,
-             data, orarioInizio, orarioFine);
+        this.id = UUID.randomUUID().toString();
 
+        this.aula = aula;
+        this.docente = docente;
+        this.corso = corso;
+        this.tipologia = tipologia;
+        this.denominazione = denominazione;
+        this.data = data;
+        this.orarioInizio = orarioInizio;
+        this.orarioFine = orarioFine;
         this.idSerie = idSerie;
     }
 
@@ -158,10 +166,17 @@ public class Prenotazione {
                         LocalDate data, LocalTime orarioInizio,
                         LocalTime orarioFine) {
 
-        this(aula, docente, corso, tipologia, denominazione,
-             data, orarioInizio, orarioFine);
-
         this.id = id;
+
+        this.aula = aula;
+        this.docente = docente;
+        this.corso = corso;
+        this.tipologia = tipologia;
+        this.denominazione = denominazione;
+        this.data = data;
+        this.orarioInizio = orarioInizio;
+        this.orarioFine = orarioFine;
+        this.idSerie = null;
     }
 
     /**
@@ -198,8 +213,16 @@ public class Prenotazione {
                         LocalDate data, LocalTime orarioInizio,
                         LocalTime orarioFine, String idSerie) {
 
-        this(id, aula, docente, corso, tipologia, denominazione,
-             data, orarioInizio, orarioFine);
+        this.id = id;
+
+        this.aula = aula;
+        this.docente = docente;
+        this.corso = corso;
+        this.tipologia = tipologia;
+        this.denominazione = denominazione;
+        this.data = data;
+        this.orarioInizio = orarioInizio;
+        this.orarioFine = orarioFine;
 
         this.idSerie = idSerie;
     }
