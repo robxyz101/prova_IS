@@ -11,6 +11,7 @@ var annotated_dup =
                 [ "Docente", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_docente.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_docente" ],
                 [ "Edificio", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_edificio.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_edificio" ],
                 [ "EsitoInvio", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_esito_invio.html", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_esito_invio" ],
+                [ "Formati", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_formati.html", null ],
                 [ "Impostazioni", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_impostazioni.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_impostazioni" ],
                 [ "ModalitaVisualizzazione", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_modalita_visualizzazione.html", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_modalita_visualizzazione" ],
                 [ "Prenotazione", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_prenotazione.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_prenotazione" ],
@@ -29,7 +30,8 @@ var annotated_dup =
                 [ "PrenotazioneService", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_prenotazione_service.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_prenotazione_service" ],
                 [ "RicercaService", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_ricerca_service.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_ricerca_service" ],
                 [ "RiferimentoPendenteException", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_riferimento_pendente_exception.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_riferimento_pendente_exception" ],
-                [ "SovrapposizioneException", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_sovrapposizione_exception.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_sovrapposizione_exception" ]
+                [ "SovrapposizioneException", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_sovrapposizione_exception.html", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_sovrapposizione_exception" ],
+                [ "TipoAnagrafica", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_tipo_anagrafica.html", null ]
               ] ],
               [ "storage", null, [
                 [ "ArchivioDati", "interfaceit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1storage_1_1_archivio_dati.html", "interfaceit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1storage_1_1_archivio_dati" ],

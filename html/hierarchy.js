@@ -20,6 +20,7 @@ var hierarchy =
       [ "it.unisa.diem.softeng.aulin.service.SovrapposizioneException", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_sovrapposizione_exception.html", null ],
       [ "it.unisa.diem.softeng.aulin.storage.ArchivioException", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1storage_1_1_archivio_exception.html", null ]
     ] ],
+    [ "it.unisa.diem.softeng.aulin.model.Formati", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_formati.html", null ],
     [ "it.unisa.diem.softeng.aulin.model.Impostazioni", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_impostazioni.html", null ],
     [ "it.unisa.diem.softeng.aulin.service.ImpostazioniService", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_impostazioni_service.html", null ],
     [ "it.unisa.diem.softeng.aulin.model.ModalitaVisualizzazione", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_modalita_visualizzazione.html", null ],
@@ -34,5 +35,6 @@ var hierarchy =
       [ "it.unisa.diem.softeng.aulin.model.ValidazioneException", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_validazione_exception.html", null ]
     ] ],
     [ "it.unisa.diem.softeng.aulin.SystemInfo", "classit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1_system_info.html", null ],
+    [ "it.unisa.diem.softeng.aulin.service.TipoAnagrafica", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1service_1_1_tipo_anagrafica.html", null ],
     [ "it.unisa.diem.softeng.aulin.model.TipoAttivita", "enumit_1_1unisa_1_1diem_1_1softeng_1_1aulin_1_1model_1_1_tipo_attivita.html", null ]
 ];

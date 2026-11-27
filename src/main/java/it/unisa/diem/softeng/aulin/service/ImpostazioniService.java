@@ -6,6 +6,7 @@ import it.unisa.diem.softeng.aulin.model.ValidazioneException;
 import it.unisa.diem.softeng.aulin.storage.ArchivioDati;
 import it.unisa.diem.softeng.aulin.storage.ArchivioException;
 import java.nio.file.Path;
+import java.util.Set;
 
 /**
  * @brief Servizio applicativo per la gestione delle impostazioni e delle operazioni sull'archivio (UC1, UC15, UC16).
@@ -51,11 +52,36 @@ public class ImpostazioniService {
      *
      * Utilizzato all'avvio per stabilire se proporre la configurazione iniziale guidata (UC1, FI5.1).
      *
-     * @return true se tutte le liste dell'archivio (docenti, aule, edifici, corsi, prenotazioni) sono vuote, false altrimenti.
+     * @return true se tutte le liste dell'archivio (docenti, aule, edifici, prenotazioni) sono vuote, false altrimenti.
      * @post Lo stato interno dell'archivio non viene modificato.
      */
     public boolean isArchivioVuoto() {
         return false;
+    }
+
+
+    /**
+     * @brief Verifica se l'archivio contiene almeno uno edificio, un'aula e un docente.
+     *
+     * Utilizzato per verificare lo stato di minima configurazione dell'archivio (UC1, FI5.1).
+     *
+     * @return true se tutte le liste dell'archivio (docenti, aule, edifici) hanno almeno un record, false altrimenti.
+     * @post Lo stato interno dell'archivio non viene modificato.
+     */
+    public boolean isConfigurazioneInizialeCompleta(){
+        return  false;
+    }
+
+    /**
+     * @brief Restituisce le anagrafice che sono completamente assenti nell'archivio
+     *
+     * Utilizzato per aggiornare e visualizare all'utente i elementi mancanti per uscire dallo stato di Configurazione (UC1, FI5.1).
+     *
+     * @return Ritorna un set con i tipi di anagrafica mancanti, se sono presenti tutti, restituisce Set vuoto
+     * @post Lo stato interno dell'archivio non viene modificato.
+     */
+    public Set<TipoAnagrafica> getAnagraficeMancanti(){
+        return null;
     }
 
     /**
