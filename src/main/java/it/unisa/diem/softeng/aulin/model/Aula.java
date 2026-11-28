@@ -112,6 +112,7 @@ public class Aula {
      * il formato previsto.
      */
     public void setCodice(String codice) {
+
         this.codice = codice;
     }
 

@@ -1,7 +1,6 @@
 package it.unisa.diem.softeng.aulin.service;
 
 import it.unisa.diem.softeng.aulin.model.Aula;
-import it.unisa.diem.softeng.aulin.model.Corso;
 import it.unisa.diem.softeng.aulin.model.Docente;
 import it.unisa.diem.softeng.aulin.model.Prenotazione;
 import it.unisa.diem.softeng.aulin.model.ValidazioneException;
@@ -70,18 +69,6 @@ public class RicercaService {
         return null;
     }
 
-    /**
-     * @brief Cerca i corsi per codice o denominazione, anche con corrispondenza parziale (FI8.6).
-     *
-     * Il confronto è case-insensitive. Se {@code query} è nulla o vuota restituisce tutti i corsi.
-     *
-     * @param[in] query Testo di ricerca su codice o denominazione del corso (facoltativo).
-     * @return Lista dei corsi corrispondenti ai criteri (vuota se nessun riscontro).
-     * @post Nessun dato dell'archivio viene modificato.
-     */
-    public List<Corso> cercaCorsi(String query) {
-        return null;
-    }
 
     /**
      * @brief Individua tutte le aule libere in una specifica data e fascia oraria che rispettano i filtri opzionali (UC7, FI6.4, FI6.6).

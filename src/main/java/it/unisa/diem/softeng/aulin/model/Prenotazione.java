@@ -31,7 +31,6 @@ import java.util.UUID;
  *
  * @see Aula
  * @see Docente
- * @see Corso
  * @see TipoAttivita
  */
 public class Prenotazione {
@@ -39,7 +38,6 @@ public class Prenotazione {
     private final String id;
     private Aula aula;
     private Docente docente;
-    private Corso corso;
     private TipoAttivita tipologia;
     private String denominazione;
     private LocalDate data;
@@ -60,7 +58,6 @@ public class Prenotazione {
      *
      * @param[in] aula Aula alla quale viene assegnata la prenotazione.
      * @param[in] docente Docente responsabile dell'attività.
-     * @param[in] corso Corso universitario associato, null se non previsto.
      * @param[in] tipologia Tipologia dell'attività prenotata.
      * @param[in] denominazione Titolo o descrizione dell'attività.
      * @param[in] data Data in cui si svolge la prenotazione.
@@ -72,7 +69,7 @@ public class Prenotazione {
      *
      * @see UUID
      */
-    public Prenotazione(Aula aula, Docente docente, Corso corso,
+    public Prenotazione(Aula aula, Docente docente,
                         TipoAttivita tipologia, String denominazione,
                         LocalDate data, LocalTime orarioInizio,
                         LocalTime orarioFine) {
@@ -81,7 +78,6 @@ public class Prenotazione {
 
         this.aula = aula;
         this.docente = docente;
-        this.corso = corso;
         this.tipologia = tipologia;
         this.denominazione = denominazione;
         this.data = data;
@@ -116,7 +112,7 @@ public class Prenotazione {
      *
      * @see UUID
      */
-    public Prenotazione(Aula aula, Docente docente, Corso corso,
+    public Prenotazione(Aula aula, Docente docente,
                         TipoAttivita tipologia, String denominazione,
                         LocalDate data, LocalTime orarioInizio,
                         LocalTime orarioFine, String idSerie) {
@@ -125,7 +121,6 @@ public class Prenotazione {
 
         this.aula = aula;
         this.docente = docente;
-        this.corso = corso;
         this.tipologia = tipologia;
         this.denominazione = denominazione;
         this.data = data;
@@ -161,7 +156,7 @@ public class Prenotazione {
      *
      * @see UUID
      */
-    public Prenotazione(String id, Aula aula, Docente docente, Corso corso,
+    public Prenotazione(String id, Aula aula, Docente docente,
                         TipoAttivita tipologia, String denominazione,
                         LocalDate data, LocalTime orarioInizio,
                         LocalTime orarioFine) {
@@ -170,7 +165,6 @@ public class Prenotazione {
 
         this.aula = aula;
         this.docente = docente;
-        this.corso = corso;
         this.tipologia = tipologia;
         this.denominazione = denominazione;
         this.data = data;
@@ -208,7 +202,7 @@ public class Prenotazione {
      *
      * @see UUID
      */
-    public Prenotazione(String id, Aula aula, Docente docente, Corso corso,
+    public Prenotazione(String id, Aula aula, Docente docente,
                         TipoAttivita tipologia, String denominazione,
                         LocalDate data, LocalTime orarioInizio,
                         LocalTime orarioFine, String idSerie) {
@@ -217,7 +211,6 @@ public class Prenotazione {
 
         this.aula = aula;
         this.docente = docente;
-        this.corso = corso;
         this.tipologia = tipologia;
         this.denominazione = denominazione;
         this.data = data;
@@ -254,7 +247,7 @@ public class Prenotazione {
      * @throws ValidazioneException Se i nuovi dati non rispettano
      * i vincoli di dominio.
      */
-    public void modifica(Aula aula, Docente docente, Corso corso,
+    public void modifica(Aula aula, Docente docente,
                          TipoAttivita tipologia, String denominazione,
                          LocalDate data, LocalTime orarioInizio,
                          LocalTime orarioFine) {
@@ -323,14 +316,6 @@ public class Prenotazione {
         return docente;
     }
 
-    /**
-     * @brief Restituisce il corso universitario associato alla prenotazione.
-     *
-     * @return Corso associato oppure null se non previsto.
-     */
-    public Corso getCorso() {
-        return corso;
-    }
 
     /**
      * @brief Restituisce la tipologia dell'attività prenotata.
@@ -409,7 +394,6 @@ public class Prenotazione {
         return Objects.equals(id, that.id)
                 && Objects.equals(aula, that.aula)
                 && Objects.equals(docente, that.docente)
-                && Objects.equals(corso, that.corso)
                 && tipologia == that.tipologia
                 && Objects.equals(denominazione, that.denominazione)
                 && Objects.equals(data, that.data)
@@ -432,7 +416,7 @@ public class Prenotazione {
      */
     @Override
     public int hashCode() {
-        return Objects.hash(id, aula, docente, corso, tipologia,
+        return Objects.hash(id, aula, docente, tipologia,
                 denominazione, data, orarioInizio, orarioFine, idSerie);
     }
 }

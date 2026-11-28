@@ -20,18 +20,16 @@ public class Formati {
      * @brief Verifica se la mail rispetta il formato richiesto
      *
      * @post Se la mail rispetta il pattern il metodo ritorna true, altrimenti false
-     * @throws ValidazioneException Se codice è null.
+     * @throws ValidazioneException Se mail è null.
      */
     public static boolean isEmailValida(String codice){
         return false;
     }
 
     /**
-     * @brief Formatta la stringa eliminando gli spazi, ponendo in maiuscola la prima lettera e in minuscola le restati.
+     * @brief Formatta la stringa eliminando gli spazi iniziali e finali, ponendo in maiuscola la prima lettera.
      *
-     * Se sono presente virgole formatta la stringa ponendo i caratteri separati da: ", "
-     *
-     * @post Se la mail rispetta il pattern il metodo ritorna true, altrimenti false
+     * @post Ritorna la stringa formattata
      * @throws ValidazioneException Se string è null.
      */
     public static String formattaString(String string){
